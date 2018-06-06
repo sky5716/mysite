@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="">
+    <style>
+        
+    </style>
+</head>
+<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // $("#group").css({
+        //     position: "absolute",
+        //     left: 300 + "px",
+        //     top: 50 + "px",
+        //     width: 400 + "px",
+        //     height: 400 + "px",
+        //     "background-color": "#0000ff",
+        //    "text-align":"right"
+        // });
+
+        // $("#img1").css({
+        //     width: 40 + "px",
+        //     height: 40 + "px"
+        // });
+        // $("#div1").css({
+        //     position: "absolute",
+        //     "background-color": "#ff0000",
+        //     display: "inline-block",
+        //  });
+
+        $("#img1").css({
+            width: 40 + "px",
+            height: 40 + "px"
+        });
+       
+       $("#img1").animate(
+       {
+            width: "100%"
+       },
+       {
+           complete:function(){
+               console.log(11111);
+               $("#img1").animate({width:"30%"})
+           }
+       }
+       );
+    }); 
+</script>
+
+<body>
+    <!-- <div id="group"> -->
+        <!-- <img src="./jis_22.jpg" id="img1"> -->
+        <!-- <div id="div1">1000</div> -->
+    <!-- </div> -->
+
+    
+   <img src="./jis_22.jpg" id="img1">
+
+</body>
+</html>
