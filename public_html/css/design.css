@@ -1,0 +1,44 @@
+/* ヘッダー全体 */
+header {
+    background-color: #000000;
+}
+
+/* ヘッダー タイトルテキスト */
+#header_top {
+    font-family: Impact;
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-left: 20%;
+    animation-name: fadeIn_anime;
+    animation-duration: 3s;
+}
+
+/* ヘッダーナビゲーション */
+#navbar {
+    background-color: #303030;
+    padding-left: 15%;
+}
+
+#navbar ul li {
+    display: inline;
+    padding-left: 30px;
+    animation-name: fadeIn_anime;
+    animation-duration: 3s;
+}
+
+#navbar a {
+    color: #d3d3d3;
+    /* font-family: Impact; */
+    font-size: 14px;
+}
+
+
+body {
+    background-color: #fffafa
+}
+
+/* アニメーション */
+@keyframes fadeIn_anime {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
