@@ -1,0 +1,24 @@
+{
+    "remotePath": "/home/web-hisao/www/mysite",
+    "host": "web-hisao.sakura.ne.jp",
+    "username": "web-hisao",
+    "password": "tvkv57es3m",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": false,
+        "extensionsToInclude": [],
+        "path": ""
+    }
+}
