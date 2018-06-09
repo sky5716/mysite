@@ -1,35 +1,42 @@
 /* ヘッダー全体 */
 header {
+    /* background-color: #de9610; */
     background-color: #000000;
 }
 
 /* ヘッダー タイトルテキスト */
 #header_top {
+    text-align: center;
+}
+
+#header_top a {
+    text-decoration: none;
+    color: #ff6347;
     font-family: Impact;
-    color: #FFFFFF;
-    font-size: 40px;
-    margin-left: 20%;
-    animation-name: fadeIn_anime;
-    animation-duration: 3s;
+    font-size: 48px;
 }
 
 /* ヘッダーナビゲーション */
 #navbar {
     background-color: #303030;
+    /* background-color: #f2cf01; */
     padding-left: 15%;
+    margin-top: -15px;
 }
 
 #navbar ul li {
     display: inline;
     padding-left: 30px;
-    animation-name: fadeIn_anime;
-    animation-duration: 3s;
 }
 
 #navbar a {
+    text-decoration: none;
     color: #d3d3d3;
-    /* font-family: Impact; */
     font-size: 14px;
+    font-family: sans-serif;
+}
+#navbar a:hover {
+    color: #a9a9a9;
 }
 
 
@@ -41,4 +48,8 @@ body {
 @keyframes fadeIn_anime {
     0% { opacity: 0;}
     100% { opacity: 1;}
+}
+.fadeIn_anime {
+    animation-name: fadeIn_anime;
+    animation-duration: 3s;
 }
