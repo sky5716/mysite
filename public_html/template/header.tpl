@@ -19,14 +19,14 @@ $_out_html .=<<<END_OF_HTML
 
 <body>
 <header>
-    <div id="header_top"><a href="./?M=Default">NOBOON CAFE</a></div>
+    <div id="header_top"><a href="./?M=Default" class="fadeIn_anime">NOBOON CAFE</a></div>
     <nav id="navbar">
-        <ul>
-            <li><a href="./?M=Default" id="default">TOP</a></li>
-            <li><a href="./?M=Price&A=Default" id="price">料金・営業時間</a></li>
-            <li><a href="" id="attention">利用上のご注意</a></li>
-            <li><a href="" id="game">ボードゲームご紹介</a></li>
-            <li><a href="" id="access">アクセス</a></li>
+        <ul class="fadeIn_anime">
+            <li><a href="#" id="nav_default">NOBOON CAFEとは</a></li>
+            <li><a href="#" id="nav_price">料金・営業時間</a></li>
+            <li><a href="#" id="nav_attention">利用上のご注意</a></li>
+            <li><a href="#" id="nav_gamelist">ボードゲームご紹介</a></li>
+            <li><a href="#" id="nav_access">アクセス</a></li>
         </ul>
     </nav>
 </header>

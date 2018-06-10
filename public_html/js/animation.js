@@ -1,15 +1,34 @@
 $(function(){
 console.log("jquery start");
 
-    //トップページのアクセスのときだけフェードイン演出をつける
-    var top_access = $("#top_access").text();
-    if(top_access == 1) {
-        $("#header_top").addClass("fadeIn_anime");
-        $("#navbar ul li").addClass("fadeIn_anime");
-    }
+    $(document).ready(function() {
+        show_page("page_default");
+    });
 
-    //料金
-    // $("#price").click(function() {
+    //それぞれのページにアクセス
+    $("#nav_default").click(function() {
+        show_page("page_default");
+    });
+    $("#nav_price").click(function() {
+        show_page("page_price");
+    });
+    $("#nav_attention").click(function() {
+        show_page("page_attention");
+    });
+    $("#nav_gamelist").click(function() {
+        show_page("page_gamelist");
+    });
+    $("#nav_access").click(function() {
+        show_page("page_access");
+    });
+    
+    function show_page(id) {
+        $(".show_page").hide();
+        $("#"+id).show();
+    }
+    
+    //ajaxテスト
+    // $("#nav_price").click(function() {
     //     $.ajax({
     //         url:'./ajax.php',
     //         data: {
