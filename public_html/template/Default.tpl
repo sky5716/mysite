@@ -1,5 +1,6 @@
 <?php
     $_out_html .=<<<END_OF_HTML
+    <div id="main_content">
         <article id="page_default" class="show_page fadeIn_anime" style="display:none">
             <h2>NOBOON CAFEとは</h2>
         </article>
@@ -15,5 +16,6 @@
         <article id="page_access" class="show_page fadeIn_anime" style="display:none">
             <h2>アクセス</h2>
         </article>
+    </div>
 END_OF_HTML;
 ?>

@@ -19,16 +19,28 @@ $_out_html .=<<<END_OF_HTML
 
 <body>
 <header>
-    <div id="header_top"><a href="./?M=Default" class="fadeIn_anime">NOBOON CAFE</a></div>
-    <nav id="navbar">
-        <ul class="fadeIn_anime">
-            <li><a href="#" id="nav_default">NOBOON CAFEとは</a></li>
-            <li><a href="#" id="nav_price">料金・営業時間</a></li>
-            <li><a href="#" id="nav_attention">利用上のご注意</a></li>
-            <li><a href="#" id="nav_gamelist">ボードゲームご紹介</a></li>
-            <li><a href="#" id="nav_access">アクセス</a></li>
-        </ul>
-    </nav>
+    <div id="grid_container">
+        <div id="header_top"><a href="./?M=Default" class="fadeIn_anime">NOBOON CAFE</a></div>
+        <nav id="navbar">
+            <div class="fadeIn_anime">
+                <div id="nav_default" class="nav_link">
+                    <a href="#"><img src="../public_html/img/nav_icon/default.png" id="default_img"><br>NOBOON CAFEとは</a>
+                </div>
+                <div id="nav_price" class="nav_link">
+                    <a href="#"><img src="../public_html/img/nav_icon/price.png"><br>営業時間・料金</a>
+                </div>
+                <div id="nav_attention" class="nav_link">
+                    <a href="#"><img src="../public_html/img/nav_icon/attention.png"><br>利用上のご注意</a>
+                </div>
+                <div id="nav_gamelist" class="nav_link">
+                    <a href="#"><img src="../public_html/img/nav_icon/gamelist.png"><br>ボードゲームご紹介</a>
+                </div>
+                <div id="nav_access" class="nav_link">
+                    <a href="#"><img src="../public_html/img/nav_icon/access.png"><br>アクセス</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 END_OF_HTML;
 ?>

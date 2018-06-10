@@ -1,12 +1,13 @@
-/* ヘッダー全体 */
-header {
-    /* background-color: #de9610; */
-    background-color: #000000;
+body {
+    background-color: #fffafa;
+    margin: 0;
 }
 
 /* ヘッダー タイトルテキスト */
 #header_top {
     text-align: center;
+    background-color: #000000;
+    padding: 10px 15% 10px 10%
 }
 
 #header_top a {
@@ -18,15 +19,9 @@ header {
 
 /* ヘッダーナビゲーション */
 #navbar {
-    background-color: #303030;
-    /* background-color: #f2cf01; */
+    background-color: #303030;    
     text-align: center;
-    margin-top: -15px;
-}
-
-#navbar ul li {
-    display: inline;
-    padding-left: 30px;
+    padding: 10px 0 10px 0
 }
 
 #navbar a {
@@ -39,11 +34,15 @@ header {
     color: #a9a9a9;
 }
 
-
-body {
-    background-color: #fffafa
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
+.nav_link {
+    padding: 0 5% 0 5%;
+    float: left;
+}
 /* アニメーション */
 @keyframes fadeIn_anime {
     0% { opacity: 0;}
@@ -51,5 +50,5 @@ body {
 }
 .fadeIn_anime {
     animation-name: fadeIn_anime;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
