@@ -7,7 +7,7 @@ body {
 #header_top {
     text-align: center;
     background-color: #000000;
-    padding: 10px 15% 10px 10%
+    padding: 10px 15% 10px 10%;
 }
 
 #header_top a {
@@ -37,12 +37,22 @@ body {
 #grid_container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    white-space: nowrap;
 }
 
 .nav_link {
     padding: 0 5% 0 5%;
-    float: left;
+    display: inline-block;
 }
+
+/* #main_content {
+    text-align: center;
+} */
+
+.page_body {
+    padding: 0 30% 0 30%;
+}
+
 /* アニメーション */
 @keyframes fadeIn_anime {
     0% { opacity: 0;}
